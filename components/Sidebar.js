@@ -4,6 +4,7 @@ function Sidebar() {
   return (
     <section>
       <Image src = {auditicalogo} width= {56} height = {56}/>
+      <Image/>
     </section>
   )
 }
