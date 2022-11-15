@@ -1,20 +1,18 @@
 import Head from 'next/head'
-import { Global } from '@emotion/react'
-import xw from 'xwind'
+import Dashboard from '../components/Dashboard';
 
-function App({ Component, pageProps }) {
+function Home() {
   return (
-    <>
+    <div>
       <Head>
-        <title>Tailwindcss Emotion Example</title>
+        <title>Auditica - Dashboard</title>
       </Head>
-      <Global
-        //tailwind base styles + keyframes + ring and shadow classes variables  ... to global styles
-        styles={xw`XWIND_BASE XWIND_GLOBAL`}
-      />
-      <Component {...pageProps} />
-    </>
+
+      <Dashboard />
+    </div>
+
+
   )
 }
 
-export default App
+export default Home;
