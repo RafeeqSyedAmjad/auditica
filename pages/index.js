@@ -1,8 +1,19 @@
+import Head from 'next/head'
+import Dashboard from '../components/Dashboard';
 
-function index() {
+function Home() {
   return (
-    <div>index</div>
+    <div>
+      <Head>
+        <title>Auditica - Dashboard</title>
+        <link rel ="icon" href="/favicon.ico"/>
+      </Head>
+
+      <Dashboard />
+    </div>
+
+
   )
 }
 
-export default index
+export default Home;

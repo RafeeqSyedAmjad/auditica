@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+@layer base {
+    body{
+        @apply font-body bg-[#171717] scrollbar-hide;
+    }
+}
+@layer components {
+    .sidebarIcon {
+        @apply h-6 text-[#ffffff] cursor-pointer;
+    }
+}
