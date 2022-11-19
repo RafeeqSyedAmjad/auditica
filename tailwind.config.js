@@ -25,13 +25,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Inter", "sans- serif"],
-      sans: ["ui-sans-serif", "system-ui"],
+      body: ["Inter", "sans-serif"],
     },
-  },
-  variants: {
-    extend: {},
-    scrollbar: ["rounded"],
   },
   plugins: [
     require("tailwind-scrollbar-hide"),
