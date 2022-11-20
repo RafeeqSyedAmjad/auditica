@@ -1,10 +1,25 @@
 
 import Search from './Search'
 import { useState } from 'react'
+import { useSession } from 'next-auth/react';
+import { useEffect } from 'react';
 
-function body() {
+function body({ spotifyApi }) {
+  const {data:session} = useSession();
+  const {accessToken} = session;
   const [search, setSearch] = useState("");
   const [searchresults, setSearchResults] = useState([]);
+  const [newReleases, setNewReleases] = useState([]);
+
+  useEffect(() => {
+    if(!accessToken) return;
+    spotifyApi.setAccessToken(accessToken);
+  }, [accessToken]);
+
+  // searching for songs
+  useEffect(() => {
+  }, [search]);
+
   return (
     <section className="bg-[#171717] ml-24 py-4 space-y-8 md:max-w-6xl flex-grow md:mr-2.5">
       <Search search={search} setSearch={setSearch} />
