@@ -8,11 +8,14 @@ function Home() {
 
   const router = useRouter(); 
   const {status , data: session} = useSession({
+    required: true,
     onUnauthenticated(){
       router.push("/auth/signin")
-    }
+    },
   });
 
+
+  // Loading animation
   if(status==='loading'){
     return <Loader/>;
   }
@@ -24,7 +27,6 @@ function Home() {
         <title>Auditica - Dashboard</title>
         <link rel ="icon" href="/favicon.ico"/>
       </Head>
-
       <Dashboard />
     </div>
 

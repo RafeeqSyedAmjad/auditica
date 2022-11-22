@@ -5,4 +5,4 @@
   )
 }
 
-export default Loader 
+export default Loader;

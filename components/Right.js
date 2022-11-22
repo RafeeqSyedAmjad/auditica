@@ -6,4 +6,4 @@ function Right() {
   )
 }
 
-export default Right
+export default Right;

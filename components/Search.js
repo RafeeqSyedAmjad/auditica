@@ -1,5 +1,5 @@
 
-function Search({search,setSearch}) {
+function Search({search, setSearch}) {
   return (
         <div className= "*max-w-[1150px] rounded-full overflow-hidden border-2 border-[#d3d4d2] p-1.5 bg-[#eeefee] bg-opacity-100 px-5 pr-8 flex items-center">
           <div className= "h-4 w-4 rounded-full border-2 flex-shrink-0 animate-pulse border-[#575855]"/>
